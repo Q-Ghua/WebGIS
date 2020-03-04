@@ -1,0 +1,9 @@
+1. 安装Tomcat.
+2. 下载Geoserver,上传到Tomcat，加载为服务
+3. 安装PostgreSQL + PostGIS, Create Extension PostGIS;
+4. 向PostGIS中导入shp数据。      // 路径中不能有中文
+5. 进入GeoServer,添加工作区（WorkSpaces）。工作空间是将不同数据来源的数据保存在一起。设置URI http://localhost:8080/WebGIS
+6. 向GeoServer的工作区添加数据源postgis。
+7. 增加图层，添加刚刚的数据，publish（定义CRS,通过数据计算边框）.
+8. 在Layer Preview可查看，并可以在先拉选框选择WMS与WFS服务。
+
